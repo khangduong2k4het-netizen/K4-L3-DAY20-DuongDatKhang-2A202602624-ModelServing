@@ -131,8 +131,8 @@ Q2 nhỏ hơn nhưng decode chậm hơn Q4; tăng CPU thread lên 32 cũng khôn
 - [x] Số đo đã đối chiếu với benchmarks; real/stub và giới hạn được khai rõ.
 - [x] Verify exit 0; sửa chuẩn hoá đường dẫn Windows trong scripts/verify.py.
 - [x] Tên repo đúng mẫu và public trên GitHub: K4-L3-DAY20-DuongDatKhang-2A202602624-ModelServing.
-- [ ] Commit cuối đã push.
-- [ ] URL repo đã nộp vào VinUni LMS.
+- [x] Bài đã push lên origin/main; URL: https://github.com/khangduong2k4het-netizen/K4-L3-DAY20-DuongDatKhang-2A202602624-ModelServing
+- [ ] URL repo đã nộp vào VinUni LMS (chưa thực hiện: phiên công cụ không truy cập được trình duyệt/LMS).
 - [x] Không đưa model weights, runtime, virtualenv hay .env vào bài nộp.
 
 ## 9. Khai báo sử dụng AI  *(docs/RULES.md §3)*
