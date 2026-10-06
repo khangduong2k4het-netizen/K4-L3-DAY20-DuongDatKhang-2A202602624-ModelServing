@@ -1,0 +1,85 @@
+{
+  "prompt": "Answer in Vietnamese in at most 180 words. A request produces 5 output tokens. The first token arrives 200 ms after sending the request; the last arrives at 600 ms. Calculate TTFT and TPOT, show the formula, and explain whether 2-bit quantization is always faster than 4-bit.",
+  "temperature": 0,
+  "max_tokens": 512,
+  "responses": [
+    {
+      "quant": "Q4_K_M",
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "TTFT (Total Time to First Frame) is the time from the request to the first output token. TPOT (Total Time to Output) is the time from the first output token to the last.\n\nThe formula for TTFT is:\nTTFT = 200 ms (latency) + 5 tokens × 200 ms (latency per token) = 1200 ms.\n\nThe formula for TPOT is:\nTPOT = 200 ms (latency) + 5 tokens × 200 ms (latency per token) = 1200 ms.\n\nRegarding 2-bit vs. 4-bit quantization: 2-bit quantization is **not always faster**. While it reduces bit overhead, it introduces quantization error. 4-bit quantization offers higher precision but consumes more bandwidth and processing power. In many scenarios, 2-bit quantization is faster due to lower latency and reduced memory bandwidth usage, whereas 4-bit is slower due to higher latency and bandwidth costs. The speed depends on the specific application's requirements for accuracy versus efficiency."
+            }
+          }
+        ],
+        "created": 1791271398,
+        "model": "C:\\Users\\khang\\Downloads\\gitlabVin\\K4-Track02-Day20-DuongDatKhang-2A202602624-ModelServing-Lab\\models\\Qwen3.5-0.8B-Q4_K_M.gguf",
+        "system_fingerprint": "b10488-9d77fa172",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 233,
+          "prompt_tokens": 83,
+          "total_tokens": 316,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "id": "chatcmpl-FyndpdEVy15dcqCO21UBaWmXj4Hrzi2a",
+        "timings": {
+          "cache_n": 0,
+          "prompt_n": 83,
+          "prompt_ms": 55.32,
+          "prompt_per_token_ms": 0.6665060240963856,
+          "prompt_per_second": 1500.361532899494,
+          "predicted_n": 233,
+          "predicted_ms": 1511.938,
+          "predicted_per_token_ms": 6.516974137931035,
+          "predicted_per_second": 153.4454455143002
+        }
+      }
+    },
+    {
+      "quant": "UD-Q2_K_XL",
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "length",
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "**TTFT & TPOT**\n\n**1. Formula:**\n*   **TTFT (Time to First Token):** $TTFT = \\frac{1}{\\text{Token Rate}}$\n*   **TPOT (Time per Output Token):** $TPOT = \\frac{1}{\\text{Token Rate}}$\n*   **TPOT (Time per Output Token):** $TPOT = \\frac{1}{\\text{Token Rate}}$\n*   **TPOT (Time per Output Token):** $TPOT = \\frac{1}{\\text{Token Rate}}$\n*   **TPOT (Time per Output Token):** $TPOT = \\frac{1}{\\text{Token Rate}}$\n*   **TPOT (Time per Output Token):** $TPOT = \\frac{1}{\\text{Token Rate}}$\n*   **TPOT (Time per Output Token):** $TPOT = \\frac{1}{\\text{Token Rate}}$\n*   **TPOT (Time per Output Token):** $TPOT = \\frac{1}{\\text{Token Rate}}$\n*   **TPOT (Time per Output Token):** $TPOT = \\frac{1}{\\text{Token Rate}}$\n*   **TPOT (Time per Output Token):** $TPOT = \\frac{1}{\\text{Token Rate}}$\n*   **TPOT (Time per Output Token):** $TPOT = \\frac{1}{\\text{Token Rate}}$\n*   **TPOT (Time per Output Token):** $TPOT = \\frac{1}{\\text{Token Rate}}$\n*   **TPOT (Time per Output Token):** $TPOT = \\frac{1}{\\text{Token Rate}}$\n*   **TPOT (Time per Output Token):** $TPOT = \\frac{1}{\\text{Token Rate}}$\n*   **TPOT (Time per Output Token):** $TPOT = \\frac{1}{\\text{"
+            }
+          }
+        ],
+        "created": 1791271403,
+        "model": "C:\\Users\\khang\\Downloads\\gitlabVin\\K4-Track02-Day20-DuongDatKhang-2A202602624-ModelServing-Lab\\models\\Qwen3.5-0.8B-UD-Q2_K_XL.gguf",
+        "system_fingerprint": "b10488-9d77fa172",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 429,
+          "prompt_tokens": 83,
+          "total_tokens": 512,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "id": "chatcmpl-0PpCyCfTzc5pkwQJKzPj9hdzzjjnzktk",
+        "timings": {
+          "cache_n": 0,
+          "prompt_n": 83,
+          "prompt_ms": 67.48,
+          "prompt_per_token_ms": 0.8130120481927712,
+          "prompt_per_second": 1229.9940723177237,
+          "predicted_n": 429,
+          "predicted_ms": 2881.829,
+          "predicted_per_token_ms": 6.7332453271028045,
+          "predicted_per_second": 148.51679263412228
+        }
+      }
+    }
+  ]
+}

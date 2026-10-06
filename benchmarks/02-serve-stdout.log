@@ -1,0 +1,14 @@
+
+────────────────────────────────────────────────────────────────
+  llama-server on :8080
+────────────────────────────────────────────────────────────────
+  binary   : llama-server.exe  (llama.cpp b10488)
+  model    : Qwen3.5-0.8B-Q4_K_M.gguf  [Q4_K_M]
+  threads  : 8    ngl: 99    ctx: 2048
+  slots    : 4 (continuous batching on)
+  endpoints: http://localhost:8080/v1/chat/completions
+             http://localhost:8080/metrics   <- Prometheus, rubric item 7
+             http://localhost:8080/slots     <- per-slot state
+
+  C:\Users\khang\Downloads\gitlabVin\K4-Track02-Day20-DuongDatKhang-2A202602624-ModelServing-Lab\runtime\b10488\llama-server.exe -m C:\Users\khang\Downloads\gitlabVin\K4-Track02-Day20-DuongDatKhang-2A202602624-ModelServing-Lab\models\Qwen3.5-0.8B-Q4_K_M.gguf --host 127.0.0.1 --port 8080 -t 8 -ngl 99 --ctx-size 2048 --parallel 4 --cont-batching --metrics --reasoning off
+

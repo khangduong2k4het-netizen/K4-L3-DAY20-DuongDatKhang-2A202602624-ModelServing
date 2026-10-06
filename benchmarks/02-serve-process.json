@@ -1,0 +1,5 @@
+﻿{
+    "ProcessId":  10656,
+    "Name":  "llama-server.exe",
+    "CommandLine":  "C:\\Users\\khang\\Downloads\\gitlabVin\\K4-Track02-Day20-DuongDatKhang-2A202602624-ModelServing-Lab\\runtime\\b10488\\llama-server.exe -m C:\\Users\\khang\\Downloads\\gitlabVin\\K4-Track02-Day20-DuongDatKhang-2A202602624-ModelServing-Lab\\models\\Qwen3.5-0.8B-Q4_K_M.gguf --host 127.0.0.1 --port 8080 -t 8 -ngl 99 --ctx-size 2048 --parallel 4 --cont-batching --metrics --reasoning off"
+}
