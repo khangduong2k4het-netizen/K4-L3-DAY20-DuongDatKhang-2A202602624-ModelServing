@@ -126,11 +126,11 @@ Q2 nhỏ hơn nhưng decode chậm hơn Q4; tăng CPU thread lên 32 cũng khôn
 
 ## 8. Self-check trước khi push
 
-- [ ] Bằng chứng và REFLECTION đã commit.
+- [x] Bằng chứng và REFLECTION đã commit.
 - [x] Đủ 5 screenshot đúng tên; giữ nguyên nội dung ảnh thật.
 - [x] Số đo đã đối chiếu với benchmarks; real/stub và giới hạn được khai rõ.
-- [ ] Verify exit 0 sau commit.
-- [ ] Tên repo đúng mẫu và public trên GitHub.
+- [x] Verify exit 0; sửa chuẩn hoá đường dẫn Windows trong scripts/verify.py.
+- [x] Tên repo đúng mẫu và public trên GitHub: K4-L3-DAY20-DuongDatKhang-2A202602624-ModelServing.
 - [ ] Commit cuối đã push.
 - [ ] URL repo đã nộp vào VinUni LMS.
 - [x] Không đưa model weights, runtime, virtualenv hay .env vào bài nộp.
